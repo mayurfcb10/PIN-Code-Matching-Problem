@@ -12,7 +12,7 @@ public class Pin_Code {
 		System.out.println("Enter the PIN Code:");
 		String patternValidate = sc.nextLine();
 
-		boolean matcher = patternValidate.matches("^[\\d ]{6}");
+		boolean matcher = patternValidate.matches("^[\\d ]{6}$");
 		if(matcher == true) {
 			System.out.println("Valid PIN Code");
 		}else {
